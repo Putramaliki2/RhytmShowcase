@@ -1,1 +1,27 @@
-
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Pengguna — RhythmShowcase</title>
+  <link rel="stylesheet" href="../assets/styles.css?v=2">
+  <script defer src="../assets/app.js?v=4"></script>
+</head>
+<body class="auth-page">
+  <header class="auth-header"><a class="brand" href="index.html"><span class="brand-mark">♫</span> RhythmShowcase</a><a class="text-link" href="login.html">Sudah punya akun? Masuk</a></header>
+  <main class="auth-main">
+    <p class="eyebrow">GABUNG KOMUNITAS</p>
+    <h1>Buat Akun Pengguna</h1>
+    <p class="muted">Daftar untuk berbagi pengalaman bermain dan menulis ulasan.</p>
+    <form class="auth-card" id="register-form">
+      <label for="register-name">Nama tampilan</label><input id="register-name" name="name" minlength="2" maxlength="60" autocomplete="name" required>
+      <label for="register-email">Email</label><input id="register-email" name="email" type="email" maxlength="254" autocomplete="email" required>
+      <label for="register-password">Kata sandi</label><input id="register-password" name="password" type="password" minlength="8" maxlength="128" autocomplete="new-password" required>
+      <label for="register-confirm">Konfirmasi kata sandi</label><input id="register-confirm" name="confirm_password" type="password" minlength="8" maxlength="128" autocomplete="new-password" required>
+      <button class="button button-primary full-button" type="submit">Buat Akun</button>
+    </form>
+    <p class="auth-footnote">Kata sandi disimpan sebagai hash di server, bukan teks biasa.</p>
+  </main>
+  <footer class="site-footer auth-footer"><a class="brand" href="index.html"><span class="brand-mark">♫</span> RhythmShowcase</a><small>© 2026 RhythmShowcase</small></footer>
+</body>
+</html>
