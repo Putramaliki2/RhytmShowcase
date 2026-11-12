@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tulis Review — RhythmShowcase Admin</title>
+  <link rel="stylesheet" href="../assets/styles.css?v=2">
+  <script defer src="../assets/app.js?v=4"></script>
+</head>
+<body class="admin-page">
+  <header class="admin-topbar"><a class="brand" href="../user/index.html"><span class="brand-mark">♫</span> RhythmShowcase</a><div class="admin-breadcrumb">Admin <span>/</span> Review Lagu</div><a class="avatar" href="login.html" aria-label="Profil admin">A</a></header>
+  <aside class="admin-sidebar"><p class="eyebrow">ADMIN PANEL</p><nav aria-label="Navigasi admin"><a href="dashboard.html"><span>▦</span> Dashboard</a><a class="selected" href="review.html"><span>♫</span> Review Lagu</a><a href="games.html"><span>◈</span> Game &amp; Lagu</a><a href="settings.html"><span>⚙</span> Pengaturan</a></nav><div class="admin-user"><span class="avatar">A</span><div><strong>Admin</strong><small>Administrator</small></div></div><a class="logout-link" href="logout-warning.html">↪ <span>Logout</span></a></aside>
+  <main class="admin-content">
+    <div class="admin-heading"><div><h1>Tambah Review Baru</h1><p class="muted">Tulis artikel review lagu untuk ditampilkan di RhythmShowcase.</p></div><div class="button-row"><button class="button button-secondary" type="button" data-review-status="draft">Simpan Draft</button><button class="button button-primary" type="button" data-review-status="published">Publikasikan →</button></div></div>
+    <form class="review-editor" id="admin-review-form">
+      <input type="hidden" name="id">
+      <section class="editor-main info-card">
+        <h2>Informasi Review</h2>
+        <label for="review-title">Judul Artikel</label><input id="review-title" name="title" minlength="3" maxlength="140" placeholder="Judul review" required>
+        <label for="origin-game">Lagu</label><select id="origin-game" name="song_id" required></select>
+        <label for="video-url">URL video YouTube (opsional)</label><input id="video-url" name="video_url" type="url" placeholder="https://youtu.be/xxxxxxxxxxx">
+        <div class="upload-box"><span class="upload-icon">＋</span><strong>Unggah gambar cover</strong><small>PNG, JPG atau WEBP · Maks 5 MB</small><label class="text-link" for="cover">Pilih Gambar</label><input class="sr-only" id="cover" type="file" accept="image/*"></div>
+        <label for="article-body">Isi Artikel</label><div class="editor-toolbar"><span>B</span><span><i>I</i></span><span>H1</span><span>H2</span><span>• List</span><span>↗ Link</span><span>▧ Gambar</span><span>▶ Video</span></div><textarea id="article-body" name="body" rows="9" minlength="20" maxlength="8000" placeholder="Tuliskan ulasan lagu..." required></textarea>
+        <div class="form-grid"><div><label for="pros">Kelebihan (satu per baris)</label><textarea id="pros" name="pros" rows="4" placeholder="Beat yang menarik"></textarea></div><div><label for="cons">Kekurangan (satu per baris)</label><textarea id="cons" name="cons" rows="4" placeholder="Difficulty spike"></textarea></div></div>
+      </section>
+      <aside class="editor-aside">
+        <section class="info-card"><h2>Publikasi</h2><p class="muted">Simpan sebagai draft atau terbitkan setelah konfirmasi.</p><hr><h3>Ringkasan SEO</h3><p class="muted">Review yang diterbitkan akan tampil di halaman publik lagu.</p></section>
+        <section class="info-card"><h2>Tentang Embed YouTube</h2><span class="youtube-mark">▶</span><ol class="muted"><li>Tempel URL video YouTube.</li><li>Sistem mengambil thumbnail video.</li><li>Pengunjung menekan tombol play.</li><li>Video diputar di halaman artikel.</li></ol></section>
+      </aside>
+    </form>
+  </main>
+</body>
+</html>
