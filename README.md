@@ -4,12 +4,6 @@ RhythmShowcase is a small full-stack rhythm-game music catalog MVP. It uses
 HTML/CSS/JavaScript, a Python standard-library HTTP server, and SQLite; no
 third-party packages are required.
 
-## Run and test
-
-See [HowToRun.md](./HowToRun.md) for setup, server startup, demo credentials,
-and test commands. [checklist_mvp.md](./checklist_mvp.md) documents the five
-MVP stories and their verification status.
-
 ## Project structure
 
 - `user/` — public landing page, catalog, song detail, registration/login.
