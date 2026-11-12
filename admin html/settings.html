@@ -1,1 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pengaturan Admin — RhythmShowcase</title>
+  <link rel="stylesheet" href="../assets/styles.css?v=2">
+  <script defer src="../assets/app.js?v=4"></script>
+</head>
+<body class="admin-page">
+  <header class="admin-topbar"><a class="brand" href="../user/index.html"><span class="brand-mark">♫</span> RhythmShowcase</a><div class="admin-breadcrumb">Admin <span>/</span> Pengaturan</div><a class="avatar" href="login.html" aria-label="Profil admin">A</a></header>
+  <aside class="admin-sidebar"><p class="eyebrow">ADMIN PANEL</p><nav aria-label="Navigasi admin"><a href="dashboard.html"><span>▦</span> Dashboard</a><a href="review.html"><span>♫</span> Review Lagu</a><a href="games.html"><span>◈</span> Game &amp; Lagu</a><a class="selected" href="settings.html"><span>⚙</span> Pengaturan</a></nav><div class="admin-user"><span class="avatar">A</span><div><strong>Admin</strong><small>Administrator</small></div></div><a class="logout-link" href="logout-warning.html">↪ <span>Logout</span></a></aside>
+  <main class="admin-content">
+    <div class="admin-heading"><div><h1>Pengaturan Admin</h1><p class="muted">Atur informasi akun dan preferensi pengelolaan RhythmShowcase.</p></div></div>
+    <form class="settings-grid" id="settings-form">
+      <section class="info-card settings-account"><h2>Informasi Akun</h2><label for="admin-name">Nama Admin</label><input id="admin-name" value="Administrator"><label for="admin-email">Email</label><input id="admin-email" type="email" value="admin@rhythmshowcase.id"></section>
+      <section class="info-card settings-preferences"><h2>Preferensi Konten</h2><label class="switch-row" for="confirm-publish"><span>Konfirmasi sebelum publikasi</span><input id="confirm-publish" name="confirm_publish" type="checkbox" checked></label><label class="switch-row" for="new-review"><span>Notifikasi review baru</span><input id="new-review" name="notify_new_reviews" type="checkbox" checked></label><label class="switch-row" for="auto-save"><span>Simpan draft otomatis</span><input id="auto-save" name="auto_save_draft" type="checkbox"></label></section>
+      <section class="info-card settings-security"><h2>Keamanan Akun</h2><p class="muted">Perbarui kata sandi secara berkala dan jangan membagikan akses admin.</p><a class="button button-secondary" href="login.html">Ubah Kata Sandi</a></section>
+      <div class="settings-submit"><button class="button button-primary" type="submit">Simpan Pengaturan</button><small class="muted">Pengaturan disimpan ke database lokal.</small></div>
+    </form>
+  </main>
+</body>
+</html>
 
