@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071321">
+  <title>RhythmShowcase — Jelajahi lagu rhythm game</title>
+  <link rel="stylesheet" href="../assets/styles.css?v=3">
+  <script defer src="../assets/app.js?v=4"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">♫</span> RhythmShowcase</a>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a class="active" href="index.html">Home</a>
+      <a href="catalog.html">Katalog</a>
+      <a href="detail.html">Komunitas</a>
+    </nav>
+    <a class="avatar" href="login.html" aria-label="Masuk ke akun">U</a>
+  </header>
+
+  <main class="page-shell">
+    <section class="home-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TEMUKAN IRAMA FAVORITMU</p>
+        <h1>Jelajahi Lagu Game Rhythm</h1>
+        <p class="muted">Baca ulasan, panduan bermain, dan temukan lagu yang cocok untuk levelmu.</p>
+        <form class="search-bar" action="catalog.html">
+          <label class="sr-only" for="song-search">Cari lagu, game, atau judul</label>
+          <input id="song-search" type="search" placeholder="Cari lagu, game, atau judul...">
+          <button class="icon-button" type="submit" aria-label="Cari">⌕</button>
+        </form>
+        <div class="filter-row">
+          <a class="select-chip" href="catalog.html">Semua Lagu <span>⌄</span></a>
+          <a class="select-chip" href="catalog.html">Tingkat Kesulitan <span>⌄</span></a>
+          <a class="select-chip" href="catalog.html">BPM <span>⌄</span></a>
+          <a class="select-chip" href="catalog.html">Game <span>⌄</span></a>
+        </div>
+      </div>
+      <a class="feature-panel" href="detail.html">
+        <span class="feature-note">♫</span>
+        <strong>Jelajahi irama baru</strong>
+        <span class="muted">PILIH LAGU</span>
+      </a>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">PILIHAN KOMUNITAS</p><h2>Lagu Populer</h2></div>
+        <a class="text-link" href="catalog.html">Lihat Semua <span>→</span></a>
+      </div>
+      <div class="song-grid">
+        <a class="song-card" href="detail.html">
+          <div class="cover-art cover-pink"><span>♫</span><small>MIKU DANCE</small></div>
+          <div class="song-card-body"><h3>Hatsune Miku Dance</h3><p class="muted">Project Sekai</p><div class="tag-row"><span class="tag">VETERAN</span><span class="tag">MUST PLAY</span></div></div>
+        </a>
+        <a class="song-card" href="detail.html">
+          <div class="cover-art cover-violet"><span>♫</span><small>TESTIFY</small></div>
+          <div class="song-card-body"><h3>Testify</h3><p class="muted">Arcaea</p><div class="tag-row"><span class="tag">MEGACHALLENGE</span><span class="tag">HARD</span></div></div>
+        </a>
+        <a class="song-card" href="detail.html">
+          <div class="cover-art cover-blue"><span>♫</span><small>QUANTUM</small></div>
+          <div class="song-card-body"><h3>Quantum</h3><p class="muted">Cytus II</p><div class="tag-row"><span class="tag">VETERAN</span><span class="tag">CHALLENGE</span></div></div>
+        </a>
+        <a class="song-card" href="detail.html">
+          <div class="cover-art cover-gold"><span>♫</span><small>U.N. OWEN</small></div>
+          <div class="song-card-body"><h3>U.N. Owen Was Her?</h3><p class="muted">Touhou</p><div class="tag-row"><span class="tag">PEMULA</span><span class="tag">NORMAL</span></div></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">BACA &amp; BELAJAR</p><h2>Artikel Terbaru</h2></div>
+        <div class="carousel-controls"><a href="#artikel" aria-label="Artikel sebelumnya">‹</a><a href="#artikel" aria-label="Artikel selanjutnya">›</a><a class="text-link" href="catalog.html">Lihat Semua →</a></div>
+      </div>
+      <div class="article-grid" id="artikel">
+        <a class="article-card" href="detail.html"><span class="article-type">REVIEW</span><h3>Review: Hatsune Miku Dance</h3><p>Harmoni ceria, chart menyenangkan, dan pola yang pas untuk pemanasan.</p><time datetime="2026-10-12">12 Okt 2026</time></a>
+        <a class="article-card" href="detail.html"><span class="article-type">PANDUAN</span><h3>Panduan Bermain Arcaea</h3><p>Tips membaca jalur, menjaga timing, dan memahami lagu favoritmu.</p><time datetime="2026-10-10">10 Okt 2026</time></a>
+        <a class="article-card" href="detail.html"><span class="article-type">REVIEW</span><h3>Review: Quantum (Cytus II)</h3><p>Ulasan chart cepat dengan transisi yang menantang tapi memuaskan.</p><time datetime="2026-10-08">08 Okt 2026</time></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-mark">♫</span> RhythmShowcase</a>
+    <nav aria-label="Navigasi footer"><a href="index.html">Home</a><a href="catalog.html">Katalog</a><a href="detail.html">Komunitas</a></nav>
+    <small>© 2026 RhythmShowcase</small>
+  </footer>
+</body>
+</html>
