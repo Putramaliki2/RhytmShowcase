@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masuk — RhythmShowcase</title>
+  <link rel="stylesheet" href="../assets/styles.css?v=2">
+  <script defer src="../assets/app.js?v=1"></script>
+</head>
+<body class="auth-page">
+  <header class="auth-header"><a class="brand" href="../user/index.html"><span class="brand-mark">♫</span> RhythmShowcase</a><a class="text-link" href="../user/index.html">← Kembali ke Home</a></header>
+  <main class="auth-main">
+    <p class="eyebrow">AKUN RHYTHMSHOWCASE</p>
+    <h1>Selamat Datang di RhythmShowcase</h1>
+    <p class="muted">Pilih jalur masuk sesuai akun yang kamu gunakan.</p>
+    <form class="auth-card" action="login.html" method="post" data-auth="admin">
+      <h2>Masuk ke akunmu</h2>
+      <p class="muted">Gunakan email dan kata sandi yang terdaftar.</p>
+      <label for="email">Email</label><input id="email" name="email" type="email" placeholder="nama@email.com" autocomplete="email" required>
+      <div class="label-row"><label for="password">Kata Sandi</label><a href="#password">Lupa kata sandi?</a></div>
+      <input id="password" name="password" type="password" placeholder="Masukkan kata sandi" autocomplete="current-password" required>
+      <label class="check-label"><input type="checkbox"> Ingat saya</label>
+      <button class="button button-primary full-button" type="submit">Masuk</button>
+      <div class="or-divider"><span>atau</span></div>
+      <a class="button button-secondary full-button" href="#daftar">Buat Akun Baru</a>
+      <p class="signup-copy" id="daftar">Belum punya akun? <a href="#daftar">Daftar sekarang</a></p>
+      <a class="text-link" href="../user/login.html">Masuk sebagai Pengguna →</a>
+    </form>
+    <p class="auth-footnote">Dengan masuk, kamu setuju menerima update, melatih skill, dan berbagi pengalaman dengan komunitas.</p>
+  </main>
+  <footer class="site-footer auth-footer"><a class="brand" href="../user/index.html"><span class="brand-mark">♫</span> RhythmShowcase</a><small>© 2026 RhythmShowcase</small></footer>
+</body>
+</html>

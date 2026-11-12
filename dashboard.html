@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Admin — RhythmShowcase</title>
+  <link rel="stylesheet" href="../assets/styles.css?v=2">
+  <script defer src="../assets/app.js?v=1"></script>
+</head>
+<body class="admin-page">
+  <header class="admin-topbar"><a class="brand" href="../user/index.html"><span class="brand-mark">♫</span> RhythmShowcase</a><div class="admin-breadcrumb">Admin <span>/</span> Review Lagu</div><a class="avatar" href="login.html" aria-label="Profil admin">A</a></header>
+  <aside class="admin-sidebar">
+    <p class="eyebrow">ADMIN PANEL</p>
+    <nav aria-label="Navigasi admin">
+      <a class="selected" href="dashboard.html"><span>▦</span> Dashboard</a>
+      <a href="review.html"><span>♫</span> Review Lagu</a>
+      <a href="games.html"><span>◈</span> Game &amp; Lagu</a>
+      <a href="settings.html"><span>⚙</span> Pengaturan</a>
+    </nav>
+    <div class="admin-user"><span class="avatar">A</span><div><strong>Admin</strong><small>Administrator</small></div></div>
+    <a class="logout-link" href="logout-warning.html">↪ <span>Logout</span></a>
+  </aside>
+  <main class="admin-content">
+    <div class="admin-heading"><div><h1>Dashboard Admin</h1><p class="muted">Ringkasan aktivitas dan pengelolaan konten RhythmShowcase.</p></div><a class="button button-primary" href="review.html">＋ Tulis Review Baru</a></div>
+    <section class="stats-grid" aria-label="Ringkasan">
+      <div class="stat-card"><span>Total Review</span><strong>24</strong><small>+3 bulan ini</small></div>
+      <div class="stat-card"><span>Dipublikasikan</span><strong>18</strong><small>Siap ditampilkan</small></div>
+      <div class="stat-card"><span>Draft</span><strong>6</strong><small>Belum dipublikasikan</small></div>
+      <div class="stat-card"><span>Game Terdaftar</span><strong>5</strong><small>Game aktif</small></div>
+    </section>
+    <section class="admin-list-section">
+      <div class="section-heading"><div><h2>Daftar Review</h2></div></div>
+      <form class="admin-filters" action="dashboard.html"><label class="sr-only" for="review-search">Cari review atau game</label><input id="review-search" type="search" placeholder="⌕ Cari judul lagu atau game..."><select aria-label="Filter game"><option>Semua Game</option><option>Project Sekai</option><option>Arcaea</option></select><select aria-label="Filter status"><option>Semua Status</option><option>Published</option><option>Draft</option></select><select aria-label="Urutkan"><option>Terbaru ↓</option><option>Terlama ↑</option></select></form>
+      <div class="table-wrap"><table class="admin-table"><thead><tr><th>Judul Review</th><th>Game</th><th>Tanggal</th><th>Status</th><th>Aksi</th></tr></thead><tbody>
+        <tr><td><span class="table-title"><span class="table-icon">♫</span><span><strong>Review: Hatsune Miku Dance</strong><small>Artikel review · Admin</small></span></span></td><td>Project Sekai</td><td>12 Okt 2026</td><td><span class="status published">Published</span></td><td><a class="table-action" href="review.html" aria-label="Edit review">✎</a><a class="delete-action" href="confirm-delete.html">Hapus</a></td></tr>
+        <tr><td><span class="table-title"><span class="table-icon">♫</span><span><strong>Review: Testify</strong><small>Artikel review · Admin</small></span></span></td><td>Arcaea</td><td>10 Okt 2026</td><td><span class="status published">Published</span></td><td><a class="table-action" href="review.html" aria-label="Edit review">✎</a><a class="delete-action" href="confirm-delete.html">Hapus</a></td></tr>
+        <tr><td><span class="table-title"><span class="table-icon">♫</span><span><strong>Review: Quantum</strong><small>Artikel review · Admin</small></span></span></td><td>Cytus II</td><td>08 Okt 2026</td><td><span class="status draft">Draft</span></td><td><a class="table-action" href="review.html" aria-label="Edit review">✎</a><a class="delete-action" href="confirm-delete.html">Hapus</a></td></tr>
+        <tr><td><span class="table-title"><span class="table-icon">♫</span><span><strong>Review: U.N. Owen Was Her?</strong><small>Artikel review · Admin</small></span></span></td><td>Touhou</td><td>05 Okt 2026</td><td><span class="status published">Published</span></td><td><a class="table-action" href="review.html" aria-label="Edit review">✎</a><a class="delete-action" href="confirm-delete.html">Hapus</a></td></tr>
+        <tr><td><span class="table-title"><span class="table-icon">♫</span><span><strong>Panduan Chart Pemula</strong><small>Artikel panduan · Admin</small></span></span></td><td>Muse Dash</td><td>01 Okt 2026</td><td><span class="status draft">Draft</span></td><td><a class="table-action" href="review.html" aria-label="Edit review">✎</a><a class="delete-action" href="confirm-delete.html">Hapus</a></td></tr>
+      </tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>
